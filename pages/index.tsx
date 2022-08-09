@@ -1,17 +1,15 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
+import { SearchForm } from "../components/SearchForm";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
-  const [domain, setDomain] = useState("");
   const [serverInfo, setServerInfo] = useState();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = (domain: string) => {
     setLoading(true);
-
     fetch("/api/host", {
       method: "POST",
       headers: {
@@ -22,10 +20,7 @@ const Home: NextPage = () => {
       .then((res) => res.json())
       .then(setServerInfo)
       .catch(console.error)
-      .finally(() => {
-        setLoading(false);
-        setDomain("");
-      });
+      .finally(() => setLoading(false));
   };
 
   return (
@@ -39,16 +34,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Qual host?</h1>
 
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="">Domínio</label>
-          <input
-            type="text"
-            value={domain}
-            onChange={(e) => setDomain(e.target.value)}
-            required
-          />
-          <button type="submit">Verificar</button>
-        </form>
+        <SearchForm onSubmit={handleSubmit} />
 
         {loading && <div>Buscando...</div>}
 
