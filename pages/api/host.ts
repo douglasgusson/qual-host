@@ -18,7 +18,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
             detail: err.message,
           });
         } else {
-          res.status(200).json({ domain, hostnames, address });
+          res.status(200).json({ address, domain, hostnames });
         }
       });
     }
