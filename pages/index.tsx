@@ -4,11 +4,13 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  const [loading, setLoading] = useState(false);
   const [domain, setDomain] = useState("");
   const [serverInfo, setServerInfo] = useState();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     fetch("/api/host", {
       method: "POST",
@@ -20,7 +22,10 @@ const Home: NextPage = () => {
       .then((res) => res.json())
       .then(setServerInfo)
       .catch(console.error)
-      .finally(() => setDomain(""));
+      .finally(() => {
+        setLoading(false);
+        setDomain("");
+      });
   };
 
   return (
@@ -44,6 +49,8 @@ const Home: NextPage = () => {
           />
           <button type="submit">Verificar</button>
         </form>
+
+        {loading && <div>Buscando...</div>}
 
         {serverInfo && (
           <pre className={styles.code}>
