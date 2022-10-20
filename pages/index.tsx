@@ -6,7 +6,11 @@ import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
-  const [serverInfo, setServerInfo] = useState();
+  const [serverInfo, setServerInfo] = useState<{
+    family: number;
+    address: string;
+    hostnames: string[];
+  }>();
 
   const handleSubmit = (domain: string) => {
     setLoading(true);
@@ -39,9 +43,24 @@ const Home: NextPage = () => {
         {loading && <div>Buscando...</div>}
 
         {serverInfo && (
-          <pre className={styles.code}>
-            <code>{JSON.stringify(serverInfo, null, 2)}</code>
-          </pre>
+          <>
+            <dl className={styles.serverInfo}>
+              <dt>IP ({`IPv${serverInfo.family}`})</dt>
+              <dd>{serverInfo.address}</dd>
+              {serverInfo.hostnames.length > 0 && (
+                <>
+                  <dt>Hostnames</dt>
+                  <dd>
+                    <ul>
+                      {serverInfo.hostnames.map((hostname) => (
+                        <li key={hostname}>{hostname}</li>
+                      ))}
+                    </ul>
+                  </dd>
+                </>
+              )}
+            </dl>
+          </>
         )}
       </main>
 

@@ -56,13 +56,46 @@
   font-size: 1.5rem;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
+.serverInfo {
+  line-height: 1.5;
+  font-size: 1.2rem;
   padding: 0.75rem;
-  font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.serverInfo dl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.serverInfo dt {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.serverInfo dt::after {
+  content: ":";
+}
+
+.serverInfo dd {
+  flex: 1;
+  margin: 0;
+  background: #444;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+}
+
+.serverInfo ul {
+  list-style: none;
+  padding: 0;
+}
+
+.serverInfo ul li {
+  margin: 0;
+  padding: 0;
 }
 
 .grid {
