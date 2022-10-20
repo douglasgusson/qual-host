@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
   const [serverInfo, setServerInfo] = useState<{
+    domain: string;
     family: number;
     address: string;
     hostnames: string[];
@@ -45,6 +46,8 @@ const Home: NextPage = () => {
         {serverInfo && (
           <>
             <dl className={styles.serverInfo}>
+              <dt>Domínio</dt>
+              <dd>{serverInfo.domain}</dd>
               <dt>IP ({`IPv${serverInfo.family}`})</dt>
               <dd>{serverInfo.address}</dd>
               {serverInfo.hostnames.length > 0 && (

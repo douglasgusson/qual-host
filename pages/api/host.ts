@@ -28,6 +28,7 @@ export default async function handler(
   }).catch(() => []);
 
   res.status(200).json({
+    domain,
     family,
     address,
     hostnames,

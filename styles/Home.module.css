@@ -72,12 +72,8 @@
 }
 
 .serverInfo dt {
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-}
-
-.serverInfo dt::after {
-  content: ":";
+  padding: 0.5rem 0;
+  text-align: center;
 }
 
 .serverInfo dd {
