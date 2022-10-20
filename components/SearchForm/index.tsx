@@ -38,7 +38,7 @@ export const SearchForm: React.FC<SearchFormProps> = ({ onSubmit }) => {
         autoComplete="url"
         value={value}
         placeholder="Ex.: google.com ou https://www.google.com"
-        onChange={(e) => setValue(e.target.value)}
+        onChange={(e) => setValue(e.target.value.trim())}
         required
       />
       <button className={styles.button} type="submit">
