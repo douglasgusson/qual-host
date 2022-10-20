@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import { useState } from "react";
 import { Logo } from '../components/Logo';
 import { SearchForm } from "../components/SearchForm";
@@ -27,12 +26,6 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Qual host?</title>
-        <meta name="description" content="Busque informações sobre o host a partir do domínio." />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main className={styles.main}>
         <Logo />
         

@@ -1,8 +1,38 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import Head from "next/head";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+        <title>Qual host?</title>
+        <meta
+          name="description"
+          content="Busque informações sobre o host a partir do domínio."
+        />
+        <link rel="icon" href="/favicon.ico" />
+        <meta property="og:title" content="Qual host?" />
+        <meta
+          property="og:description"
+          content="Busque informações sobre o host a partir do domínio."
+        />
+        <meta
+          property="og:image"
+          content="https://qualhost.capixaba.dev/og-image.png"
+        />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:alt" content="Logo Qual host?" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:url" content="https://qualhost.capixaba.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="pt_BR" />
+        <meta property="og:site_name" content="Qual host?" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
