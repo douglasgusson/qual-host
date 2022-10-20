@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import { useState } from "react";
+import { Logo } from '../components/Logo';
 import { SearchForm } from "../components/SearchForm";
 import styles from "../styles/Home.module.css";
 
@@ -37,6 +38,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
+        <Logo />
+        
         <h1 className={styles.title}>Qual host?</h1>
 
         <SearchForm onSubmit={handleSubmit} />

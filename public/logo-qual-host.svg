@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="64.281616mm"
+   height="28.154631mm"
+   viewBox="0 0 64.281616 28.154631"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="logo-qual-host.png"
+   inkscape:export-xdpi="202.31"
+   inkscape:export-ydpi="202.31"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="logo-qual-host.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.0359279"
+     inkscape:cx="146.37061"
+     inkscape:cy="114.93531"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-18.384396,-80.350167)">
+    <g
+       aria-label="&lt;?&gt;"
+       id="text1259"
+       style="font-size:25.4px;line-height:1.25;stroke-width:0.264583"
+       transform="matrix(1.4855519,0,0,1.4855519,-24.532606,-45.849437)">
+      <path
+         d="m 40.899242,90.343942 -8.453641,4.936718 8.453641,4.84554 -1.862667,2.93077 -10.146974,-6.304413 v -2.917744 l 10.212102,-6.330461 z"
+         style="font-weight:bold;font-family:'FiraCode Nerd Font Mono';-inkscape-font-specification:'FiraCode Nerd Font Mono Bold';fill:#ffff00"
+         id="path1431" />
+      <path
+         d="m 50.420996,84.951326 q 1.91477,0 3.269436,0.59918 1.354667,0.586154 2.032,1.589128 0.690359,0.989949 0.690359,2.175282 0,1.055077 -0.377743,1.810564 -0.377744,0.755487 -0.924821,1.237436 -0.534051,0.481949 -1.406769,1.081128 -0.71641,0.481949 -1.146257,0.833641 -0.41682,0.351693 -0.703384,0.846667 -0.273539,0.494974 -0.273539,1.159282 v 0.534051 h -3.76441 v -0.664307 q 0,-1.224411 0.390769,-2.071077 0.403795,-0.846667 0.950872,-1.354667 0.547077,-0.508 1.393744,-1.094154 0.560102,-0.390769 0.859692,-0.638256 0.312615,-0.247487 0.508,-0.573128 0.20841,-0.338667 0.20841,-0.755488 0,-0.690359 -0.573128,-1.081128 -0.573128,-0.390769 -1.510974,-0.390769 -0.898769,0 -1.745436,0.403795 -0.833641,0.390769 -1.524,1.185333 l -2.605128,-2.032 q 2.383692,-2.800513 6.252307,-2.800513 z m -0.677333,14.237026 q 0.638256,0 1.172308,0.325641 0.547077,0.312615 0.859692,0.859697 0.325641,0.53405 0.325641,1.1723 0,0.63826 -0.325641,1.18534 -0.312615,0.53405 -0.859692,0.84666 -0.534052,0.32564 -1.172308,0.32564 -0.651282,0 -1.185333,-0.32564 -0.534052,-0.31261 -0.846667,-0.84666 -0.312615,-0.54708 -0.312615,-1.18534 0,-0.63825 0.312615,-1.1723 0.312615,-0.547082 0.846667,-0.859697 0.534051,-0.325641 1.185333,-0.325641 z"
+         style="font-weight:bold;font-family:'FiraCode Nerd Font Mono';-inkscape-font-specification:'FiraCode Nerd Font Mono Bold';fill:#ffff00"
+         id="path1433" />
+      <path
+         d="m 72.160802,93.808762 v 2.943795 l -10.146974,6.304413 -1.862667,-2.80052 8.466667,-4.97579 -8.466667,-4.819488 1.82359,-2.95682 z"
+         style="font-weight:bold;font-family:'FiraCode Nerd Font Mono';-inkscape-font-specification:'FiraCode Nerd Font Mono Bold';fill:#ffff00"
+         id="path1435" />
+    </g>
+  </g>
+</svg>
