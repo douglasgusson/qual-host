@@ -4,15 +4,11 @@ import { useState } from "react";
 import { Logo } from '../components/Logo';
 import { SearchForm } from "../components/SearchForm";
 import styles from "../styles/Home.module.css";
+import { ServerInfo } from '../types/server-info';
 
 const Home: NextPage = () => {
   const [loading, setLoading] = useState(false);
-  const [serverInfo, setServerInfo] = useState<{
-    domain: string;
-    family: number;
-    address: string;
-    hostnames: string[];
-  }>();
+  const [serverInfo, setServerInfo] = useState<ServerInfo>();
 
   const handleSubmit = (domain: string) => {
     setLoading(true);
@@ -33,7 +29,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Head>
         <title>Qual host?</title>
-        <meta name="description" content="Busque o host de um domínio" />
+        <meta name="description" content="Busque informações sobre o host a partir do domínio." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

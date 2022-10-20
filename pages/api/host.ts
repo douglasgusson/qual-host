@@ -1,9 +1,10 @@
 import { lookup, reverse } from "dns";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { ServerInfo } from "../../types/server-info";
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse<ServerInfo>
 ) {
   const domain = req.body.domain;
 
