@@ -10,13 +10,13 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>Qual host?</title>
         <meta
           name="description"
-          content="Busque informações sobre o host a partir do domínio."
+          content="Descubra detalhes de host no Qual Host? Encontre informações de DNS, resolva domínios e IPs. Explore a infraestrutura online de forma simples e rápida."
         />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Qual host?" />
         <meta
           property="og:description"
-          content="Busque informações sobre o host a partir do domínio."
+          content="Descubra detalhes de host no Qual Host? Encontre informações de DNS, resolva domínios e IPs. Explore a infraestrutura online de forma simples e rápida."
         />
         <meta
           property="og:image"
